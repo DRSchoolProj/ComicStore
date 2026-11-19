@@ -8,15 +8,17 @@ Authors:     [DR]
 Date:        [2026-11-18]
 """
 
-import tkinter as tk
+import tkinter as tk    #Python's built-in GUI library
 
+# Import GUI classes for each menu function, so they can be called by btn handlers
+from supplier_management_gui import SupplierManagementGUI
 
-# -Button handlers-
+# Button handlers
 # Handler will open their respective window when clicked.
-# Currently placeholders.
+# Some are currently placeholders.
 
 def ManageSupplierClicked():
-    print("ManageSupplierClicked")
+    SupplierManagementGUI(root)   # Creates and opens Supplier Management window as child of root
 
 
 def ManageItemsClicked():
@@ -35,8 +37,8 @@ def GenerateReportClicked():
     print("GenerateReportClicked")
 
 
-# -Main window setup-
-root = tk.Tk()
+# Main window setup
+root = tk.Tk()             # There can only be ONE root/Tk() per program
 root.title("Main Menu")
 root.geometry("300x300")
 
@@ -47,5 +49,5 @@ tk.Button(root, text="Manage Orders", width=20, command=ManageOrdersClicked).pac
 tk.Button(root, text="Manage Expenses", width=20, command=ManageExpensesClicked).pack(pady=10)
 tk.Button(root, text="Generate Report", width=20, command=GenerateReportClicked).pack(pady=10)
 
-# Start event loop; Program stays open until this window is closed:
+# Start event loop. Program stays open until this window is closed:
 root.mainloop()
