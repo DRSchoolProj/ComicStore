@@ -15,8 +15,9 @@ from tkinter import ttk, messagebox   # ttk has Treeview table; messagebox shows
 class SupplierManagementGUI:
     """Manage Suppliers window."""
 
-    FIELDS = ("id", "name", "email")   # dict keys, used as columns in Table
-    INPUT_FIELDS = ("name", "email")   # user-input fields. id excluded because it's assigned automatically.
+    FIELDS = ("id", "name")   # dict keys, used as columns in Table
+    INPUT_FIELDS = ("name",)  # user-input field. id excluded because it's assigned automatically.
+    # trailing  " , " required for proper and extendable field traversal logic
 
     def __init__(self, parent):
         """Create and display the window.
@@ -24,16 +25,16 @@ class SupplierManagementGUI:
         """
         self.window = tk.Toplevel(parent)   # Toplevel, not Tk(): only 1 root per program
         self.window.title("Manage Suppliers")
-        self.window.geometry("600x400")
+        self.window.geometry("400x400")
 
         self.suppliers = []   # list of dicts for demonstration. This will later come from the supplier entity control class
-        self.next_id = 1      # id value, auto assigned to new suppliers. Only increases, removing a supplier does not change ids
+        self.next_id = 1      # id value, auto assigned to new suppliers. Only increases, removing a supplier does not change existing ids
 
         # Creates Table with Headers:
         self.table = ttk.Treeview(self.window, columns=self.FIELDS, show="headings", height=8)
         for field in self.FIELDS:
             self.table.heading(field, text=field.capitalize())
-            self.table.column(field, width=150)
+            self.table.column(field, width=50 if field == "id" else 250)
         self.table.pack(padx=10, pady=10, fill="both", expand=True)
 
         # Creates Entry widgets for each field:
@@ -42,7 +43,7 @@ class SupplierManagementGUI:
         self.entries = {}   # maps each field name to its Entry widget:
         for col, field in enumerate(self.INPUT_FIELDS):
             tk.Label(form, text=field.capitalize()).grid(row=0, column=col, padx=5)
-            entry = tk.Entry(form, width=18)
+            entry = tk.Entry(form, width=30)
             entry.grid(row=1, column=col, padx=5)
             self.entries[field] = entry
 
