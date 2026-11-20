@@ -10,10 +10,10 @@ Date:        [2026-11-18]
 
 import tkinter as tk    #Python's built-in GUI library
 
-# Import GUI classes for each menu function, so they can be called by btn handlers
+# Import GUI classes for each menu function, so they can be called by button handlers
 from supplier_management_gui import SupplierManagementGUI
 
-# Button handlers
+# Button handlers:
 # Handler will open their respective window when clicked.
 # Some are currently placeholders.
 
