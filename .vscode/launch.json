@@ -1,0 +1,13 @@
+{
+    // Configuration to make VSCodium always run main_menu_gui.py when using F5 and Ctrl+F5 shortcut
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Main Menu",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main_menu_gui.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
