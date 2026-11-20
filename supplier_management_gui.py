@@ -25,7 +25,7 @@ class SupplierManagementGUI:
         """
         self.window = tk.Toplevel(parent)   # Toplevel, not Tk(): only 1 root per program
         self.window.title("Manage Suppliers")
-        self.window.geometry("400x400")
+        self.window.geometry("500x400")
 
         self.suppliers = []   # list of dicts for demonstration. This will later come from the supplier entity control class
         self.next_id = 1      # id value, auto assigned to new suppliers. Only increases, removing a supplier does not change existing ids
