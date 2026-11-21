@@ -17,24 +17,24 @@ from supplier_management_gui import SupplierManagementGUI
 # Handler will open their respective window when clicked.
 # Some are currently placeholders.
 
-def ManageSupplierClicked():
+def manage_supplier_clicked():
     SupplierManagementGUI(root)   # Creates and opens Supplier Management window as child of root
 
 
-def ManageItemsClicked():
-    print("ManageItemsClicked")
+def manage_items_clicked():
+    print("manage_items_clicked")
 
 
-def ManageOrdersClicked():
-    print("ManageOrdersClicked")
+def manage_orders_clicked():
+    print("manage_orders_clicked")
 
 
-def ManageExpensesClicked():
-    print("ManageExpensesClicked")
+def manage_expenses_clicked():
+    print("manage_expenses_clicked")
 
 
-def GenerateReportClicked():
-    print("GenerateReportClicked")
+def generate_report_clicked():
+    print("generate_report_clicked")
 
 
 # Main window setup
@@ -43,11 +43,11 @@ root.title("Main Menu")
 root.geometry("300x300")
 
 # Pass handlers to command= WITHOUT parentheses, or else the function is called immediately at startup:
-tk.Button(root, text="Manage Suppliers", width=20, command=ManageSupplierClicked).pack(pady=10)
-tk.Button(root, text="Manage Items", width=20, command=ManageItemsClicked).pack(pady=10)
-tk.Button(root, text="Manage Orders", width=20, command=ManageOrdersClicked).pack(pady=10)
-tk.Button(root, text="Manage Expenses", width=20, command=ManageExpensesClicked).pack(pady=10)
-tk.Button(root, text="Generate Report", width=20, command=GenerateReportClicked).pack(pady=10)
+tk.Button(root, text="Manage Suppliers", width=20, command=manage_supplier_clicked).pack(pady=10)
+tk.Button(root, text="Manage Items", width=20, command=manage_items_clicked).pack(pady=10)
+tk.Button(root, text="Manage Orders", width=20, command=manage_orders_clicked).pack(pady=10)
+tk.Button(root, text="Manage Expenses", width=20, command=manage_expenses_clicked).pack(pady=10)
+tk.Button(root, text="Generate Report", width=20, command=generate_report_clicked).pack(pady=10)
 
 # Start event loop. Program stays open until this window is closed:
 root.mainloop()
