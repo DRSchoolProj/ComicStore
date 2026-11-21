@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Batman #44",
+        "category": "comic",
+        "quantity": 25,
+        "supplier_id": 2,
+        "unit_cost": 2.0,
+        "price": 7.0,
+        "threshold": 0,
+        "sku": 1,
+        "sold": 0
+    },
+    {
+        "name": "Pokemon Platinum Pack",
+        "category": "tcg",
+        "quantity": 10,
+        "supplier_id": 1,
+        "unit_cost": 2.0,
+        "price": 10.0,
+        "threshold": 0,
+        "sku": 2,
+        "sold": 0
+    },
+    {
+        "name": "Grogu Funko Pop",
+        "category": "figures",
+        "quantity": 40,
+        "supplier_id": 4,
+        "unit_cost": 8.0,
+        "price": 15.0,
+        "threshold": 8,
+        "sku": 3,
+        "sold": 0
+    },
+    {
+        "name": "Coca Cola 20oz",
+        "category": "beverage",
+        "quantity": 60,
+        "supplier_id": 5,
+        "unit_cost": 2.0,
+        "price": 3.25,
+        "threshold": 20,
+        "sku": 4,
+        "sold": 0
+    },
+    {
+        "name": "shopping bags medium",
+        "category": "store use",
+        "quantity": 500,
+        "supplier_id": 6,
+        "unit_cost": 0.15,
+        "price": 0.0,
+        "threshold": 80,
+        "sku": 5,
+        "sold": 0
+    }
+]

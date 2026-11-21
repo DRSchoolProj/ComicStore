@@ -3,7 +3,7 @@ File:        supplier_entity.py
 Description: Entity class for suppliers. Holds the list of supplier dicts
              (each dict is one supplier: {"id": int, "name": str}) and reads/writes
              that list to a JSON file on disk. Contains no GUI or validation logic.
-Authors:     [DR]
+Authors:     [Daphne]
 Date:        [2026-11-19]
 """
 

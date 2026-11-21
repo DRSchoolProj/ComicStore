@@ -1,0 +1,5 @@
+[
+    {"order_id": 1, "supplier_id": 2, "order_date": "2026-11-10", "status": "Received",
+     "line_items": [{"sku": 2, "name": "Grogu Funko Pop", "quantity": 10, "unit_cost": 8.0}],
+     "total_cost": 80.0}
+]

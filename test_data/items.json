@@ -1,0 +1,10 @@
+[
+    {"sku": 1, "name": "Batman #44", "category": "comic", "quantity": 2, "supplier_id": 1,
+     "unit_cost": 2.0, "price": 7.0, "threshold": 5, "sold": 14},
+    {"sku": 2, "name": "Grogu Funko Pop", "category": "figures", "quantity": 40, "supplier_id": 2,
+     "unit_cost": 8.0, "price": 15.0, "threshold": 8, "sold": 7},
+    {"sku": 3, "name": "Pokemon Platinum Pack", "category": "tcg", "quantity": 20, "supplier_id": 1,
+     "unit_cost": 2.0, "price": 10.0, "threshold": 10, "sold": 70},
+    {"sku": 4, "name": "Coca Cola 20oz", "category": "beverage", "quantity": 20, "supplier_id": 2,
+     "unit_cost": 2.0, "price": 3.25, "threshold": 20, "sold": 0}
+]

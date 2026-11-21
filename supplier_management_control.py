@@ -3,7 +3,7 @@ File:        supplier_management_control.py
 Description: Control class for supplier management. Sits between the GUI and
              SupplierEntity: validates user input, applies the business rules,
              and tells the entity what to add or remove.
-Authors:     [DR]
+Authors:     [Daphne]
 Date:        [2026-11-19]
 """
 

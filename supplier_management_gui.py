@@ -4,7 +4,7 @@ Description: GUI class for supplier management. Responsible for window rendering
              logic, passing user input to SupplierManagementControl, and displaying
              data received from SupplierManagementControl.
              Currently placeholder data.
-Authors:     [DR]
+Authors:     [Daphne]
 Date:        [2026-11-19]
 """
 
