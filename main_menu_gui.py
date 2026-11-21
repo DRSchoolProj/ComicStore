@@ -4,7 +4,7 @@ Description: Main menu window for the inventory management application.
              Buttons lead to the Supplier Management, Item, Management, Order Management,
              Expense Management, and Report Generation screens. Buttons currently
              print a placeholder message, but will later open their own windows.
-Authors:     [DR]
+Authors:     [Daphne]
 Date:        [2026-11-18]
 """
 
@@ -12,6 +12,7 @@ import tkinter as tk    #Python's built-in GUI library
 
 # Import GUI classes for each menu function, so they can be called by button handlers
 from supplier_management_gui import SupplierManagementGUI
+from item_management_gui import ItemManagementGUI
 
 # Button handlers:
 # Handler will open their respective window when clicked.
@@ -22,7 +23,7 @@ def manage_supplier_clicked():
 
 
 def manage_items_clicked():
-    print("manage_items_clicked")
+    ItemManagementGUI(root)       # Creates and opens Item Management window as child of root
 
 
 def manage_orders_clicked():
