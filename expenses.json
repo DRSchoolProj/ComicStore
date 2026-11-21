@@ -1,0 +1,4 @@
+[
+    {"id": 1, "name": "rent", "weekly_amount": 100.0},
+    {"id": 2, "name": "payroll", "weekly_amount": 150.0}
+]

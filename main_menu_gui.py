@@ -2,9 +2,8 @@
 File:        main_menu_gui.py
 Description: Main menu window for the inventory management application.
              Buttons lead to the Supplier Management, Item, Management, Order Management,
-             Expense Management, and Report Generation screens. Buttons currently
-             print a placeholder message, but will later open their own windows.
-Authors:     [Daphne]
+             Expense Management, and Report Generation screens. 
+Authors:     [Daphne, Hamza, Kassy, Sheetal]
 Date:        [2026-11-18]
 """
 
@@ -13,10 +12,13 @@ import tkinter as tk    #Python's built-in GUI library
 # Import GUI classes for each menu function, so they can be called by button handlers
 from supplier_management_gui import SupplierManagementGUI
 from item_management_gui import ItemManagementGUI
+from order_management_gui import OrderManagementGUI
+from expense_management_gui import ExpenseManagementGUI
+from report_generation_gui import ReportGUI
 
 # Button handlers:
 # Handler will open their respective window when clicked.
-# Some are currently placeholders.
+
 
 def manage_supplier_clicked():
     SupplierManagementGUI(root)   # Creates and opens Supplier Management window as child of root
@@ -27,15 +29,15 @@ def manage_items_clicked():
 
 
 def manage_orders_clicked():
-    print("manage_orders_clicked")
+    OrderManagementGUI(root)      # Creates and opens Order Management window as child of root
 
 
 def manage_expenses_clicked():
-    print("manage_expenses_clicked")
+    ExpenseManagementGUI(root)    # Creates and opens Expense Management window as child of root
 
 
 def generate_report_clicked():
-    print("generate_report_clicked")
+    ReportGUI(root)               # Creates and opens Report Generation window as child of root
 
 
 # Main window setup
