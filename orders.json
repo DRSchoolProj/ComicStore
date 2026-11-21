@@ -1,0 +1,8 @@
+[
+    {"order_id": 1, "supplier_id": 2, "order_date": "2026-11-10", "status": "Received",
+     "line_items": [{"sku": 2, "name": "Grogu Funko Pop", "quantity": 10, "unit_cost": 8.0}],
+     "total_cost": 80.0},
+    {"order_id": 2, "supplier_id": 3, "order_date": "2026-11-18", "status": "Approved",
+     "line_items": [{"sku": 5, "name": "Shopping Bags Medium", "quantity": 100, "unit_cost": 0.15}],
+     "total_cost": 15.0}
+]
