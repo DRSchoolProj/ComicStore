@@ -221,5 +221,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-suppliers.json
-items.json
+#suppliers.json
+#items.json
+#expenses.json
+#orders.json
